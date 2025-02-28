@@ -5,6 +5,8 @@ additionalAnnotations: {}
 finalizers:
   - resources-finalizer.argocd.argoproj.io
 project: default
+repoURL: ghcr.io/jsquared2121/helm
+targetRevision: "0.4.1"
 chart: kubeflow-core
 destination:
   server: https://kubernetes.default.svc
