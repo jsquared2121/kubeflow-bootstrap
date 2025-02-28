@@ -119,7 +119,7 @@ dex:
     source:
       path: common/dex/overlays/istio
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -136,7 +136,7 @@ oidcAuthService:
     source:
       path: common/oidc-client/oidc-authservice/base
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -153,7 +153,7 @@ kubeflowNamespace:
     source:
       path: common/kubeflow-namespace/base
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -170,7 +170,7 @@ istioResources:
     source:
       path: common/istio-1-24/kubeflow-istio-resources/base
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -187,7 +187,7 @@ kubeflowRoles:
     source:
       path: common/kubeflow-roles/base
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -204,7 +204,7 @@ admissionWebhook:
     source:
       path: apps/admission-webhook/upstream/overlays/cert-manager
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -221,7 +221,7 @@ centralDashboard:
     source:
       path: apps/centraldashboard/upstream/overlays/kserve
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
       kustomize:
         patches:
         - target:
@@ -278,7 +278,7 @@ jupyterWebApp:
     source:
       path: apps/jupyter/jupyter-web-app/upstream/overlays/istio
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -295,7 +295,7 @@ notebookController:
     source:
       path: apps/jupyter/notebook-controller/upstream/overlays/kubeflow
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -312,7 +312,7 @@ profiles:
     source:
       path: apps/profiles/upstream/overlays/kubeflow
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -329,7 +329,7 @@ pvcViewerController:
     source:
       path: apps/pvcviewer-controller/upstream/default
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -346,7 +346,7 @@ volumesWebApp:
     source:
       path: apps/volumes-web-app/upstream/overlays/istio
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -363,7 +363,7 @@ exampleProfile:
     source:
       path: common/user-namespace/base
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -380,7 +380,7 @@ knativeServing:
     source:
       path: common/knative/knative-serving/overlays/gateways
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
       kustomize:
         patches:
         - target:
@@ -439,7 +439,7 @@ clusterLocalGateway:
     source:
       path: common/istio-1-17/cluster-local-gateway/base
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
       kustomize:
         patches:
         - target:
@@ -466,7 +466,7 @@ kserve:
     source:
       path: contrib/kserve/kserve
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
       kustomize:
         patches:
         - target:
@@ -493,7 +493,7 @@ katib:
     source:
       path: apps/katib/upstream/installs/katib-with-kubeflow
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -510,7 +510,7 @@ modelsWebApp:
     source:
       path: contrib/kserve/models-web-app/overlays/kubeflow
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -527,7 +527,7 @@ kubeflowPipelines:
     source:
       path: apps/pipeline/upstream/env/cert-manager/platform-agnostic-multi-user
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
       kustomize:
         patches:
         - target:
@@ -586,7 +586,7 @@ tensorboardController:
     source:
       path: apps/tensorboard/tensorboard-controller/upstream/overlays/kubeflow
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
@@ -603,7 +603,7 @@ tensorboardsWebApp:
     source:
       path: apps/tensorboard/tensorboards-web-app/upstream/overlays/istio
       repoURL: https://github.com/kubeflow/manifests
-      targetRevision: b68bb75
+      targetRevision: v1.9.1
     destination:
       namespace: argocd
       name: in-cluster
